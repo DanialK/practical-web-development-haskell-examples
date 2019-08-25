@@ -1,0 +1,24 @@
+name: practical-haskell-examples
+version: 0.0.1
+
+tested-with: GHC==8.4.4
+
+dependencies:
+- base <5 && >=4
+- containers >=0.4.0.0
+- array >=0.4
+- time
+- classy-prelude
+
+default-extensions:
+- NoImplicitPrelude
+- OverloadedStrings
+
+source-dirs: src
+ghc-options: -O2 -threaded -with-rtsopts=-N -eventlog
+
+
+executables:
+  example1-exe:
+    source-dirs: src
+    main: example1.hs

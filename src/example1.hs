@@ -1,0 +1,5 @@
+import ClassyPrelude
+
+main :: IO ()
+main = do
+  putStrLn "Hello World"
